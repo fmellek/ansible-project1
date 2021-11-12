@@ -1,0 +1,9 @@
+---
+all:
+  hosts: #list of ungrouped hosts
+  children: #all custom groups
+    dev: #group name
+      hosts:
+        host2: #hostname
+          ansible_host: "10.108.0.4" #host2 address
+          
