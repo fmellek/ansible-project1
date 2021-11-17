@@ -1,0 +1,8 @@
+---
+- name: Add User
+  hosts: all
+  vars_files: /root/ansible-project1/variables/dev_vars.yaml
+  tasks:
+    - name: add user bob
+      user:
+        name: "{{ username }}"

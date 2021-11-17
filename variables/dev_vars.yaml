@@ -1,0 +1,9 @@
+---
+- name: add variable
+  hosts: all
+  vars:
+    username:
+      - user: bob
+      - uid: 2500
+    facts: no
+  gather_facts: "{{ facts }}"
