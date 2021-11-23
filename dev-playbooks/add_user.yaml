@@ -2,6 +2,7 @@
 - name: Add User
   hosts: all
   vars_files: /root/ansible-project1/variables/dev_vars.yaml
+  gather_facts: "{{ facts }}"
   tasks:
     - name: add user bob
       user:
