@@ -6,3 +6,4 @@
     - name: add user bob
       user:
         name: "{{ username }}"
+        uid: "{{ uid }}"
